@@ -1,0 +1,13 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <ul>
+        <li th:each="member : ${members}">
+            id : <span th:text="${member.id}"></span> / name : <span th:text="${member.name}"></span>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
